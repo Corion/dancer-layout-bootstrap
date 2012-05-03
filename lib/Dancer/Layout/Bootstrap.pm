@@ -44,6 +44,8 @@ L<Template::Toolkit>.
 
 L<http://twitter.github.com/bootstrap/> - Bootstrap
 
+L<http://bootswatch.com/> - Themes for Bootstrap
+
 L<http://glyphicons.com/> - Icons from Glyphicons Free, licensed under CC BY 3.0.
 
 L<http://jquery.com/> - jQuery 1.7.2
