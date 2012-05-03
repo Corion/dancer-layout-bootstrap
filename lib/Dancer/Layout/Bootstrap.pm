@@ -4,7 +4,16 @@ use Dancer::Plugin::FlashMessage;
 
 =head1 NAME
 
-Dancer::Layout::Bootstrap
+Dancer::Layout::Bootstrap - Boostrap layout for Dancer
+
+=head1 SYNOPSIS
+
+  # 1. Copy the included template files to your dancer application
+  # 2. Change the "layout" parameter in config.yml to "bootstrap"
+  # 3. Dance On!
+
+  # Preview the layout
+  perl -Ilib -w bin\app.pl
 
 =head1 ABSTRACT
 
