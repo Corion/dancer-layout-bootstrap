@@ -33,7 +33,8 @@
         <ul class="nav">
           <li><a href="<% request.uri_base %>">Home</a></li>
 <% IF session.user %>
-<li><a class="active navbar-link" href="<% request.uri_base %>/diff">Diff</a></li>
+<li><a class="active navbar-link" href="#">Action1</a></li>
+<li><a class="active navbar-link" href="#">Action2</a></li>
 <% ELSE %>
 <li><a href="<% request.uri_base %>/user/login">Log in</a></li>
 <% END %>

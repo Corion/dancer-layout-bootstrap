@@ -41,7 +41,7 @@
             <h3 class="nav-header">Your application's environment</h3>
 
             <ul class="nav nav-list">
-                <li>Location: <code>C:\Projekte\App-Recon</code></li>
+                <li>Location: <code>...</code></li>
                 <li>Template engine: <code><% settings.template %></code></li>
                 <li>Logger: <code><% settings.logger %></code></li>
                 <li>Environment: <code><% settings.environment %></code></li>
@@ -81,7 +81,7 @@
                 </tr>
                 <tr>
                     <td>Appdir</td>
-                    <td><tt>C:\Projekte\App-Recon</tt></td>
+                    <td><tt>...</tt></td>
                 </tr>
                 <tr>
                     <td>Template engine</td>
@@ -128,7 +128,7 @@
               it's just here to help you get started. The template used to
               generate this content is located in 
               <code>views/index.tt</code>.
-              You can add some routes to <tt>lib/App/Recon.pm</tt>. 
+              You can add some routes to <tt>lib/Dancer/Layout/Bootstrappm</tt>. 
               </p>
             </li>
 
