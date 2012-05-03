@@ -1,0 +1,16 @@
+.cvsignore$
+^.git/
+^.lwpcookies
+^.releaserc
+^blib/
+^Dancer-Layout-Bootstrap-.*
+CVS/
+^pm_to_blib
+.tar.gz$
+.old$
+^Makefile$
+^cvstest$
+^blibdirs$
+.bak$
+^cover_db/
+^db/
