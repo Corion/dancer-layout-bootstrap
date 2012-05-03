@@ -7,6 +7,7 @@ appname: "Dancer::Layout::Bootstrap"
 
 # The default layout to use for your application (located in
 # views/layouts/main.tt)
+#layout: "main"
 layout: "bootstrap"
 
 # when the charset is set to UTF-8 Dancer will handle for you
