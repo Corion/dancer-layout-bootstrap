@@ -3,11 +3,11 @@
 # all the settings in this file will be loaded at Dancer's startup.
 
 # Your application's name
-appname: "App::Recon"
+appname: "Dancer::Layout::Bootstrap"
 
 # The default layout to use for your application (located in
 # views/layouts/main.tt)
-layout: "main-bootstrap"
+layout: "bootstrap"
 
 # when the charset is set to UTF-8 Dancer will handle for you
 # all the magic of encoding and decoding. You should not care
