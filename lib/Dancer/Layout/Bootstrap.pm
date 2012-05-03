@@ -13,7 +13,7 @@ Dancer::Layout::Bootstrap - Boostrap layout for Dancer
   # 3. Dance On!
 
   # Preview the layout
-  plackup bin\app.pl
+  plackup -a bin\app.pl
 
 =head1 ABSTRACT
 
