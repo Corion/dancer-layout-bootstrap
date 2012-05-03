@@ -1,0 +1,11 @@
+Thumbs.db
+Makefile
+Makefile.old
+*.tar.gz
+*.bak
+pm_to_blib
+blib/
+.releaserc
+cover_db
+sessions/
+logs/
