@@ -89,7 +89,6 @@ sub regen_README {
     };
 }
 
-
 sub regen_EXAMPLES {
     my $perl = $^X;
     (my $target = $module_pm) =~ s!\.pm$!/Examples.pm!;
