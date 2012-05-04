@@ -2,7 +2,6 @@
 bin/app.pl
 config.yml
 lib/Dancer/Layout/Bootstrap.pm
-logs/development.log
 Makefile.PL
 MANIFEST			This list of files
 MANIFEST.skip
@@ -10,25 +9,24 @@ MYMETA.json
 MYMETA.yml
 public/404.html
 public/500.html
-public/css/bootstrap-responsive.css
-public/css/bootstrap.css
-public/css/bootstrap.min.css
-public/css/error.css
-public/css/style.css
-public/dispatch.cgi
-public/dispatch.fcgi
-public/favicon.ico
-public/images/glyphicons-halflings-white.png
-public/images/glyphicons-halflings.png
-public/images/perldancer-bg.jpg
-public/images/perldancer.jpg
-public/images/Thumbs.db
-public/javascripts/bootstrap-2.0.3/bootstrap-alert.js
-public/javascripts/bootstrap-2.0.3/bootstrap.js
-public/javascripts/bootstrap-2.0.3/bootstrap.min.js
-public/javascripts/jQuery/jquery-1.7.2.min.js
-public/javascripts/jQuery/jquery.ui.widget.js
+public/css/bootstrap-responsive.css	Bootstrap 2.0.3
+public/css/bootstrap.css	Bootstrap 2.0.3
+public/css/bootstrap.min.css	Bootstrap 2.0.3
+public/css/error.css	Dancer default
+public/css/style.css	Dancer default
+public/dispatch.cgi	Dancer default
+public/dispatch.fcgi	Dancer default
+public/favicon.ico	Dancer default
+public/images/glyphicons-halflings-white.png	Glyphicons
+public/images/glyphicons-halflings.png	Bootstrap 2.0.3
+public/images/perldancer-bg.jpg	Dancer default
+public/images/perldancer.jpg	Dancer default
+public/javascripts/bootstrap-2.0.3/bootstrap-alert.js	Bootstrap 2.0.3
+public/javascripts/bootstrap-2.0.3/bootstrap.js	Bootstrap 2.0.3
+public/javascripts/bootstrap-2.0.3/bootstrap.min.js	Bootstrap 2.0.3
+public/javascripts/jQuery/jquery-1.7.2.min.js	jQuery 1.7.2
+public/javascripts/jQuery/jquery.ui.widget.js	jQuery 1.7.2
 README
-views/index.tt
-views/layouts/bootstrap.tt
-views/layouts/main.tt
+views/index.tt	Index page with Bootstrap layout
+views/layouts/bootstrap.tt	The Bootstrap layout
+views/layouts/main.tt	Dancer default
