@@ -12,11 +12,11 @@ public/500.html
 public/css/bootstrap-responsive.css	Bootstrap 2.0.3
 public/css/bootstrap.css	Bootstrap 2.0.3
 public/css/bootstrap.min.css	Bootstrap 2.0.3
-public/css/error.css	Dancer default
-public/css/style.css	Dancer default
-public/dispatch.cgi	Dancer default
-public/dispatch.fcgi	Dancer default
-public/favicon.ico	Dancer default
+public/css/error.css		Dancer default
+public/css/style.css		Dancer default
+public/dispatch.cgi		Dancer default
+public/dispatch.fcgi		Dancer default
+public/favicon.ico		Dancer default
 public/images/glyphicons-halflings-white.png	Glyphicons
 public/images/glyphicons-halflings.png	Bootstrap 2.0.3
 public/images/perldancer-bg.jpg	Dancer default
@@ -27,6 +27,7 @@ public/javascripts/bootstrap-2.0.3/bootstrap.min.js	Bootstrap 2.0.3
 public/javascripts/jQuery/jquery-1.7.2.min.js	jQuery 1.7.2
 public/javascripts/jQuery/jquery.ui.widget.js	jQuery 1.7.2
 README
-views/index.tt	Index page with Bootstrap layout
+t/01-template-list.t
+views/index.tt			Index page with Bootstrap layout
 views/layouts/bootstrap.tt	The Bootstrap layout
-views/layouts/main.tt	Dancer default
+views/layouts/main.tt		Dancer default
