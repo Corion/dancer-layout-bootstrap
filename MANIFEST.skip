@@ -16,3 +16,4 @@ CVS/
 ^db/
 ^logs/
 Thumbs.db
+^MYMETA.*
