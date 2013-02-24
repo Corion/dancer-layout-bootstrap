@@ -1,23 +1,26 @@
-.gitignore
+.releaserc
 bin/app.pl
+Changes
 config.yml
 lib/Dancer/Layout/Bootstrap.pm
 Makefile.PL
 MANIFEST			This list of files
 MANIFEST.skip
+MYMETA.json
+MYMETA.yml
 public/404.html
 public/500.html
-public/css/bootstrap-responsive.css	Bootstrap 2.0.3
+public/css/bootstrap-responsive.css	Bootstrap 2.3.0
 public/css/bootstrap-responsive.min.css
-public/css/bootstrap.css	Bootstrap 2.0.3
-public/css/bootstrap.min.css	Bootstrap 2.0.3
+public/css/bootstrap.css	Bootstrap 2.3.0
+public/css/bootstrap.min.css	Bootstrap 2.3.0
 public/css/error.css		Dancer default
 public/css/style.css		Dancer default
 public/dispatch.cgi		Dancer default
 public/dispatch.fcgi		Dancer default
 public/favicon.ico		Dancer default
 public/images/glyphicons-halflings-white.png	Glyphicons
-public/images/glyphicons-halflings.png	Bootstrap 2.0.3
+public/images/glyphicons-halflings.png	Bootstrap 2.3.0
 public/images/perldancer-bg.jpg	Dancer default
 public/images/perldancer.jpg	Dancer default
 public/javascripts/bootstrap-2.3.0/bootstrap-alert.js
