@@ -30,3 +30,4 @@ t/01-template-list.t
 views/index.tt			Index page with Bootstrap layout
 views/layouts/bootstrap.tt	The Bootstrap layout
 views/layouts/main.tt		Dancer default
+views/login.tt
