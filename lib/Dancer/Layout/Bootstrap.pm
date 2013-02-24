@@ -85,12 +85,16 @@ get '/' => sub {
 };
 
 get '/user/login' => sub {
-    session user => { name => 'Bob' };
+    template 'login';
+};
+
+post '/user/login' => sub {
+    session user => { name => params->{'name'} };
 
     flash success => sprintf "Welcome back, %s",
-        session('user')->{name};
+        session->{user}->{name};
     
-    redirect '/';
+    return redirect '/';
 };
 
 get '/user/logout' => sub {
