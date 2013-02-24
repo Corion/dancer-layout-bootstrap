@@ -74,6 +74,8 @@ L<http://glyphicons.com/> - Icons from Glyphicons Free, licensed under CC BY 3.0
 
 L<http://jquery.com/> - jQuery 1.7.2
 
+L<http://www.lavishbootstrap.com/> - create new colour schemes
+
 =cut
 
 our $VERSION = '0.1';
