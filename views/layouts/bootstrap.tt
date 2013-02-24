@@ -61,7 +61,7 @@
 Powered by <a href="http://perldancer.org/">Dancer</a> <% dancer_version %>
 Using <a href="http://glyphicons.com/">Glyphicons</a> and <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>
 </footer>
-<script src="<% request.uri_base %>/javascripts/bootstrap-2.0.3/bootstrap.js"></script>
-<script src="<% request.uri_base %>/javascripts/bootstrap-2.0.3/bootstrap-alert.js"></script>
+<script src="<% request.uri_base %>/javascripts/bootstrap-2.3.0/bootstrap.js"></script>
+<script src="<% request.uri_base %>/javascripts/bootstrap-2.3.0/bootstrap-alert.js"></script>
 </body>
 </html>
