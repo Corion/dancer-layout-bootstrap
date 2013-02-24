@@ -1,4 +1,4 @@
-.releaserc
+.gitignore
 bin/app.pl
 Changes
 config.yml
@@ -6,8 +6,6 @@ lib/Dancer/Layout/Bootstrap.pm
 Makefile.PL
 MANIFEST			This list of files
 MANIFEST.skip
-MYMETA.json
-MYMETA.yml
 public/404.html
 public/500.html
 public/css/bootstrap-responsive.css	Bootstrap 2.3.0
@@ -30,6 +28,13 @@ public/javascripts/jQuery/jquery-1.7.2.min.js	jQuery 1.7.2
 public/javascripts/jQuery/jquery.ui.widget.js	jQuery 1.7.2
 README
 t/01-template-list.t
+t/99-changes.t
+t/99-examples.t
+t/99-manifest.t
+t/99-pod.t
+t/99-todo.t
+t/99-unix-text.t
+t/99-versions.t
 views/index.tt			Index page with Bootstrap layout
 views/layouts/bootstrap.tt	The Bootstrap layout
 views/layouts/main.tt		Dancer default
