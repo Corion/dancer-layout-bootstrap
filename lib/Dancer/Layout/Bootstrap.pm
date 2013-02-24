@@ -45,14 +45,14 @@ scaffold.
 
 =head2 LIST OF FILES TO COPY
 
-    public/css/bootstrap-responsive.css   Bootstrap 2.0.3
-    public/css/bootstrap.css      Bootstrap 2.0.3
-    public/css/bootstrap.min.css  Bootstrap 2.0.3
+    public/css/bootstrap-responsive.css   Bootstrap 2.3.0
+    public/css/bootstrap.css      Bootstrap 2.3.0
+    public/css/bootstrap.min.css  Bootstrap 2.3.0
     public/images/glyphicons-halflings-white.png  Glyphicons
     public/images/glyphicons-halflings.png        Bootstrap 2.0.3
-    public/javascripts/bootstrap-2.0.3/bootstrap-alert.js Bootstrap 2.0.3
-    public/javascripts/bootstrap-2.0.3/bootstrap.js       Bootstrap 2.0.3
-    public/javascripts/bootstrap-2.0.3/bootstrap.min.js   Bootstrap 2.0.3
+    public/javascripts/bootstrap-2.3.0/bootstrap-alert.js Bootstrap 2.3.0
+    public/javascripts/bootstrap-2.3.0/bootstrap.js       Bootstrap 2.3.0
+    public/javascripts/bootstrap-2.3.0/bootstrap.min.js   Bootstrap 2.3.0
     public/javascripts/jQuery/jquery-1.7.2.min.js jQuery 1.7.2
     public/javascripts/jQuery/jquery.ui.widget.js jQuery 1.7.2
     views/index.tt        Index page with Bootstrap layout
@@ -78,7 +78,7 @@ L<http://www.lavishbootstrap.com/> - create new colour schemes
 
 =cut
 
-our $VERSION = '0.1';
+our $VERSION = '0.02';
 
 get '/' => sub {
     template 'index';
