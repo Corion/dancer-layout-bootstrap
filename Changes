@@ -1,0 +1,8 @@
+0.02 20130224
+    . Updated to Bootstrap 2.3.0
+    . Added Login template
+        Watch out for Dancer::Limbo, a complete set of templates
+        and logic, maybe coming soon.
+    . Released on CPAN
+
+0.01 never released on CPAN
