@@ -37,9 +37,19 @@
 <li><a class="active navbar-link" href="#">Action2</a></li>
 <% ELSE %>
 <li><a href="<% request.uri_base %>/user/login">Log in</a></li>
+<li><a href="<% request.uri_base %>#">Sign up</a></li>
 <% END %>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li>
+            <form class="form-search navbar-form pull-left">
+            <div class="input-append">
+              <input type="text" class="span2 search-query" placeholder="search">
+              <button type="submit" class="btn">Search</button>
+            </div>
+            </form>
+          </li>
+          </ul>
         </ul>
 </div>
 </div>
