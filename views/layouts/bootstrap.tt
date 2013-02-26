@@ -29,15 +29,18 @@
               <li><a href="<% request.uri_base %>/user/logout">Log '<%session.user.name |html %>' out</a></li>
             </ul>
 </div>
+<% ELSE %>
+<div class="pull-right">
+<a class="btn btn-success" href="<% request.uri_base %>/user/login">Log in</a>
+<a class="btn btn-info" href="<% request.uri_base %>#">Sign up</a>
+</div>
 <% END %>
+
         <ul class="nav">
           <li><a href="<% request.uri_base %>">Home</a></li>
 <% IF session.user %>
 <li><a class="active navbar-link" href="#">Action1</a></li>
 <li><a class="active navbar-link" href="#">Action2</a></li>
-<% ELSE %>
-<li><a href="<% request.uri_base %>/user/login">Log in</a></li>
-<li><a href="<% request.uri_base %>#">Sign up</a></li>
 <% END %>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -50,7 +53,6 @@
             </form>
           </li>
           </ul>
-        </ul>
 </div>
 </div>
 </div>
