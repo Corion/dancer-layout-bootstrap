@@ -19,6 +19,7 @@
 
 <% IF session.user %>
 <div class="btn-group pull-right">
+<a class="btn navbar-link" href="#">New Messages <span class="badge badge-info">3</span> </a>
 <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
               <i class="icon-user"></i> <% session.user.name |html %>
               <span class="caret"></span>
