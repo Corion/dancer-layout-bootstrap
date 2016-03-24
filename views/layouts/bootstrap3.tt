@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=<% settings.charset %>" />
+<meta charset="<% settings.charset %>">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title><% settings.appname %></title>
+<link rel="stylesheet" href="<% request.uri_base %>/css/bootstrap-3/bootstrap.css" />
+<script src="<% request.uri_base %>/javascripts/jQuery/jquery-1.11.3.min.js"></script>
+<script src="<% request.uri_base %>/javascripts/bootstrap-3/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div id="navbar" class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+    
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand"><% settings.appname %></a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+            <li><a href="<% request.uri_base %>">Home</a></li>
+            <% IF session.user %>
+            <li><a class="active navbar-link" href="#">Action1</a></li>
+            <li><a class="navbar-link" href="#">Action2</a></li>
+            <% END %>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <form class="form-search navbar-form navbar-left" role="search">
+              <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search" name="q">
+                      <div class="input-group-btn">
+                          <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                      </div>
+                  </div>
+              </form>
+            </li>
+        </ul>
+
+<ul class="nav navbar-nav navbar-right">
+<% IF session.user %>
+    <li><a href="#">New Messages <span class="badge">3</span></a></li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+          <i class="glyphicon glyphicon-user"></i>
+          <% session.user.name |html %>
+          <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+          <li><a href="#">Profile</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="<% request.uri_base %>/user/logout">Log '<%session.user.name |html %>' out</a></li>
+      </ul>
+    </li>
+<% ELSE %>
+<li><a href="<% request.uri_base %>/user/login">Log in</a></li>
+<li><a href="<% request.uri_base %>#">Sign up</a></li>
+<% END %>
+</ul>
+    </div><!--.navbar-collapse-->
+
+    </div>
+</div>
+
+<% IF flash.error %>
+<div id="msg_error" class="alert alert-danger"> <a class="close" data-dismiss="alert" href="#">×</a><% flash.error | html %> </div>
+<% END %>
+<% IF flash.message %>
+<div id="msg_message" class="alert"> <a class="close" data-dismiss="alert" href="#">×</a><% flash.message |html %> </div>
+<% END %>
+<% IF flash.success %>
+<div id="msg_success" class="alert alert-success"> <a class="close" data-dismiss="alert" href="#">×</a><% flash.success |html %> </div>
+<% END %>
+
+<% content %>
+
+<footer id="footer" class="span11">
+Powered by <a href="http://perldancer.org/">Dancer</a> <% dancer_version %>
+Using <a href="http://glyphicons.com/">Glyphicons</a> and <a href="http://twitter.github.com/bootstrap/">Bootstrap 3</a>
+</footer>
+</body>
+</html>

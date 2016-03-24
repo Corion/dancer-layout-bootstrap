@@ -9,7 +9,7 @@ Dancer::Layout::Bootstrap - Boostrap layout for Dancer
 =head1 SYNOPSIS
 
   # 1. Copy the included template files to your dancer application
-  # 2. Change the "layout" parameter in config.yml to "bootstrap"
+  # 2. Change the "layout" parameter in config.yml to "bootstrap3"
   # 3. Dance On!
 
   # Preview the layout
@@ -43,7 +43,25 @@ directory, at least until L<Dancer> resp. the C<dancer> application comes
 with a way to specify default layouts when generating a new application
 scaffold.
 
+You will likely want to use either Bootstrap 2 or Bootstrap 3. See the
+appropriate list of files to copy.
+
 =head2 LIST OF FILES TO COPY
+
+=head3 Bootstrap 3
+
+    public/css/bootstrap-3/bootstrap.css Bootstrap 3
+    public/css/bootstrap-3/bootstrap.min.css Bootstrap 3
+    public/css/fonts/glyphicons-halflings-regular.eot Bootstrap 3
+    public/css/fonts/glyphicons-halflings-regular.svg Bootstrap 3
+    public/css/fonts/glyphicons-halflings-regular.ttf Bootstrap 3
+    public/css/fonts/glyphicons-halflings-regular.woff Bootstrap 3
+    public/css/fonts/glyphicons-halflings-regular.woff2 Bootstrap 3
+    public/javascripts/bootstrap-3/bootstrap.js Bootstrap 3
+    public/javascripts/bootstrap-3/bootstrap.min.js Bootstrap 3
+    public/javascripts/jQuery/jquery-1.11.3.min.js jQuery 1.11.3 (for Bootstrap 3)
+
+=head3 Bootstrap 2
 
     public/css/bootstrap-responsive.css   Bootstrap 2.3.0
     public/css/bootstrap.css      Bootstrap 2.3.0

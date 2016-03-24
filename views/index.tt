@@ -11,7 +11,7 @@
 -->
 
 <div id="page">
-      <div id="sidebar" class="span3 sidebar-nav">
+      <div id="sidebar" class="span3 col-md-3 sidebar-nav">
         <ul id="sidebar-items" class="nav nav-list">
           <li>
             <h3 class="nav-header">Join the community</h3>
@@ -58,14 +58,14 @@
           <h2>You&rsquo;ve joined the dance floor!</h2>
         </div>
 
-        <div id="getting-started" class="hero-unit span9">
+        <div id="getting-started" class="hero-unit span9 jumbotron col-md-9">
           <h1>Getting started</h1>
           <h2>Here&rsquo;s how to get dancing:</h2>
                     
           <h3><a href="#" id="about_env_link">About your application's environment</a></h3>
 
           <div id="about-content" style="display: none;">
-            <table>
+            <table class="table-striped">
                 <tbody>
                 <tr>
                     <td>Perl version</td>

@@ -4,31 +4,31 @@
         <fieldset>
           <legend>Log in</legend>
 
-          <div class="control-group">
-            <label class="control-label" for="name">User name</label>
+          <div class="form-group">
+            <label for="name" class="col-sm-1" >User name</label>
             <div class="controls">
               <input type="text" name="name" id="name">
             </div>
           </div>
 
-          <div class="control-group">
-            <label class="control-label" for="pass">Password</label>
+          <div class="form-group">
+            <label for="pass" class="col-sm-1">Password</label>
             <div class="controls">
               <input type="password" name="pass" id="pass">
             </div>
           </div>
 
-          <div class="control-group">
+          <div class="form-group">
             <div class="controls">
-              <label class="checkbox" for="permanent_cookie">
+              <label for="permanent_cookie" class="col-sm-offset-1 col-sm-10">
                 <input name="permanent_cookie" type="checkbox" checked="checked">
                 Remember me
               </label>
             </div>
           </div>
-          <div class="form-actions">
+          <div class="form-actions form-group">
               <button name="login" class="btn btn-primary">Log in</button>
-              <button type="button" class="btn">Cancel</button>
+              <button type="button" class="btn btn-default">Cancel</button>
           </div>
 
         </fieldset>
