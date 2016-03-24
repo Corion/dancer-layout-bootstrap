@@ -6,20 +6,22 @@ lib/Dancer/Layout/Bootstrap.pm
 Makefile.PL
 MANIFEST			This list of files
 MANIFEST.skip
+META.json
+META.yml
 public/404.html
 public/500.html
-public/css/bootstrap-3/bootstrap.css Bootstrap 3
-public/css/bootstrap-3/bootstrap.min.css Bootstrap 3
+public/css/bootstrap-3/bootstrap.css	Bootstrap 3
+public/css/bootstrap-3/bootstrap.min.css	Bootstrap 3
 public/css/bootstrap-responsive.css	Bootstrap 2.3.0
 public/css/bootstrap-responsive.min.css
 public/css/bootstrap.css	Bootstrap 2.3.0
 public/css/bootstrap.min.css	Bootstrap 2.3.0
 public/css/error.css		Dancer default
-public/css/fonts/glyphicons-halflings-regular.eot Bootstrap 3
-public/css/fonts/glyphicons-halflings-regular.svg Bootstrap 3
-public/css/fonts/glyphicons-halflings-regular.ttf Bootstrap 3
-public/css/fonts/glyphicons-halflings-regular.woff Bootstrap 3
-public/css/fonts/glyphicons-halflings-regular.woff2 Bootstrap 3
+public/css/fonts/glyphicons-halflings-regular.eot	Bootstrap 3
+public/css/fonts/glyphicons-halflings-regular.svg	Bootstrap 3
+public/css/fonts/glyphicons-halflings-regular.ttf	Bootstrap 3
+public/css/fonts/glyphicons-halflings-regular.woff	Bootstrap 3
+public/css/fonts/glyphicons-halflings-regular.woff2	Bootstrap 3
 public/css/style.css		Dancer default
 public/dispatch.cgi		Dancer default
 public/dispatch.fcgi		Dancer default
@@ -31,9 +33,9 @@ public/images/perldancer.jpg	Dancer default
 public/javascripts/bootstrap-2.3.0/bootstrap-alert.js
 public/javascripts/bootstrap-2.3.0/bootstrap.js
 public/javascripts/bootstrap-2.3.0/bootstrap.min.js
-public/javascripts/bootstrap-3/bootstrap.js Bootstrap 3
-public/javascripts/bootstrap-3/bootstrap.min.js Bootstrap 3
-public/javascripts/jQuery/jquery-1.11.3.min.js jQuery 1.11.3 (for Bootstrap 3)
+public/javascripts/bootstrap-3/bootstrap.js	Bootstrap 3
+public/javascripts/bootstrap-3/bootstrap.min.js	Bootstrap 3
+public/javascripts/jQuery/jquery-1.11.3.min.js	jQuery 1.11.3 (for Bootstrap 3)
 public/javascripts/jQuery/jquery-1.7.2.min.js	jQuery 1.7.2
 public/javascripts/jQuery/jquery.ui.widget.js	jQuery 1.7.2
 README
@@ -48,6 +50,6 @@ t/99-unix-text.t
 t/99-versions.t
 views/index.tt			Index page with Bootstrap 3 layout
 views/layouts/bootstrap.tt	The Bootstrap 2 layout
-views/layouts/bootstrap3.tt The Boostrap 3 layout
+views/layouts/bootstrap3.tt	The Boostrap 3 layout
 views/layouts/main.tt		Dancer default
-views/login.tt Sample login page with Boostrap 3 layout
+views/login.tt			Sample login page with Boostrap 3 layout

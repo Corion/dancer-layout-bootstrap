@@ -96,7 +96,7 @@ L<http://www.lavishbootstrap.com/> - create new colour schemes
 
 =cut
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 get '/' => sub {
     template 'index';
