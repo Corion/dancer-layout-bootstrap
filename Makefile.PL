@@ -2,11 +2,6 @@
 use strict;
 use ExtUtils::MakeMaker qw(WriteMakefile);
 
-#use Config;
-#use lib qw(inc);
-
-# Prompt the user here for any paths and other configuration
-
 my @tests = map { glob $_ } 't/*.t', 't/*/*.t';
 my $module = 'Dancer::Layout::Bootstrap';
 (my $main_file = "lib/$module.pm" ) =~ s!::!/!g;
