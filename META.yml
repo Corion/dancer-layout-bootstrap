@@ -7,8 +7,8 @@ build_requires:
   Exporter: '0'
 configure_requires:
   ExtUtils::MakeMaker: '0'
-dynamic_config: 1
-generated_by: 'ExtUtils::MakeMaker version 6.98, CPAN::Meta::Converter version 2.142060'
+dynamic_config: 0
+generated_by: 'ExtUtils::MakeMaker version 7.24, CPAN::Meta::Converter version 2.143240'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -26,5 +26,7 @@ requires:
   YAML: '0'
   perl: '5.006'
 resources:
-  repository: http://github.com/Corion/dancer-layout-bootstrap
-version: '0.03'
+  bugtracker: http://rt.cpan.org/Public/Dist/Display.html?Name=Dancer-Layout-Bootstrap
+  license: http://dev.perl.org/licenses/
+version: '0.04'
+x_static_install: 1
