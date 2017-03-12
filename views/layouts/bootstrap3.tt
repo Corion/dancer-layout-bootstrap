@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title><% settings.appname %></title>
 <link rel="stylesheet" href="<% request.uri_base %>/css/bootstrap-3/bootstrap.css" />
-<script src="<% request.uri_base %>/javascripts/jQuery/jquery-1.11.3.min.js"></script>
+<script src="<% request.uri_base %>/javascripts/jQuery/jquery-3.11.min.js"></script>
 <script src="<% request.uri_base %>/javascripts/bootstrap-3/bootstrap.min.js"></script>
 </head>
 <body>
