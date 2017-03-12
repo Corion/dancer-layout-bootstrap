@@ -9,19 +9,28 @@ use ExtUtils::MakeMaker qw(WriteMakefile);
 
 my @tests = map { glob $_ } 't/*.t', 't/*/*.t';
 my $module = 'Dancer::Layout::Bootstrap';
-(my $module_pm = "lib/$module.pm") =~ s!::!/!g;
+(my $main_file = "lib/$module.pm" ) =~ s!::!/!g;
 (my $repo = lc $module) =~ s!::!-!g;
+(my $distname = $module) =~ s!::!-!g;
 
 # I should maybe use something like Shipwright...
-regen_README($module_pm);
+regen_README($main_file);
 #regen_EXAMPLES();
 
-WriteMakefile1(
+my %module = (
     MIN_PERL_VERSION => '5.006',
     META_MERGE => {
         resources => {
-            repository => "http://github.com/Corion/$repo",
+            repository => {
+                web => "https://github.com/Corion/$repo",
+                url => "git://github.com/Corion/$repo.git",
+                type => 'git',
+            },
+            bugtracker => 'http://rt.cpan.org/Public/Dist/Display.html?Name=' . $distname,
+            license    => 'http://dev.perl.org/licenses/',
         },
+        dynamic_config   => 0, # we promise to keep META.* up-to-date
+        x_static_install => 1, # we are pure Perl and don't do anything fancy
     },
     BUILD_REQUIRES => {
                         'Exporter'   => '0',
@@ -29,7 +38,7 @@ WriteMakefile1(
     },
     'NAME'          => $module,
     'LICENSE'       => 'perl',
-    'VERSION_FROM'  => $module_pm,
+    'VERSION_FROM'  => $main_file,
     'PREREQ_PM'     => {
                        'Template' => 2, # for output to HTML
                        'Test::More' => 0,
@@ -37,12 +46,20 @@ WriteMakefile1(
                        'Dancer'     => 0, # Was developped under 1.3095
                        'Dancer::Plugin::FlashMessage' => 0,
                       }, # e.g., Module::Name => 1.1
-    ABSTRACT_FROM   => $module_pm, # retrieve abstract from module
+    ABSTRACT_FROM   => $main_file, # retrieve abstract from module
     AUTHOR          => 'Max Maischein <corion@cpan.org>',
     test            => { TESTS => join( ' ', @tests ) },
+    clean           => { FILES => "$distname-*" },
 );
 
-1;
+sub get_module_info { %module }
+
+if( ! caller ) {
+    # I should maybe use something like Shipwright...
+    regen_README($main_file);
+    #regen_EXAMPLES();
+    WriteMakefile1(get_module_info);
+};
 
 sub WriteMakefile1 {  #Written by Alexandr Ciornii, version 0.21. Added by eumm-upgrade.
     my %params=@_;
@@ -91,7 +108,7 @@ sub regen_README {
 
 sub regen_EXAMPLES {
     my $perl = $^X;
-    (my $target = $module_pm) =~ s!\.pm$!/Examples.pm!;
+    (my $target = $main_file) =~ s!\.pm$!/Examples.pm!;
     
     if( -d 'examples' ) {
         warn "(Re)Creating $target\n";

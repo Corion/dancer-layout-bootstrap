@@ -41,7 +41,6 @@ public/javascripts/bootstrap-2.3.0/bootstrap.js
 public/javascripts/bootstrap-2.3.0/bootstrap.min.js
 public/javascripts/bootstrap-3/bootstrap.js	Bootstrap 3
 public/javascripts/bootstrap-3/bootstrap.min.js	Bootstrap 3
-public/javascripts/jQuery/jquery-1.11.3.min.js	jQuery 1.11.3 (for Bootstrap 3)
 public/javascripts/jQuery/jquery-1.7.2.min.js	jQuery 1.7.2
 public/javascripts/jQuery/jquery-3.1.1.min.js
 public/javascripts/jQuery/jquery-ui-1.12.min.js
@@ -49,15 +48,15 @@ public/javascripts/jQuery/jquery.ui.widget.js	jQuery 1.7.2
 README
 README.mkdn
 t/01-template-list.t
-t/99-changes.t
-t/99-examples.t
-t/99-manifest.t
-t/99-pod.t
-t/99-todo.t
-t/99-unix-text.t
-t/99-versions.t
 views/index.tt			Index page with Bootstrap 3 layout
 views/layouts/bootstrap.tt	The Bootstrap 2 layout
 views/layouts/bootstrap3.tt	The Boostrap 3 layout
 views/layouts/main.tt		Dancer default
 views/login.tt			Sample login page with Boostrap 3 layout
+xt/99-changes.t
+xt/99-examples.t
+xt/99-manifest.t
+xt/99-pod.t
+xt/99-todo.t
+xt/99-unix-text.t
+xt/99-versions.t

@@ -55,7 +55,10 @@ appropriate list of files to copy.
     public/css/fonts/glyphicons-halflings-regular.woff2 Bootstrap 3
     public/javascripts/bootstrap-3/bootstrap.js Bootstrap 3
     public/javascripts/bootstrap-3/bootstrap.min.js Bootstrap 3
-    public/javascripts/jQuery/jquery-1.11.3.min.js jQuery 1.11.3 (for Bootstrap 3)
+    public/javascripts/jQuery/jquery-3.1.1.min.js jQuery 3.1.1 (for Bootstrap 3)
+    public/javascripts/jQuery/jquery-ui-1.12.min.js jQuery UI (for Bootstrap 3)
+    views/index.tt        Index page with Bootstrap layout
+    views/layouts/bootstrap3.tt    The Bootstrap layout
 
 ### Bootstrap 2
 
@@ -86,6 +89,34 @@ support user log-in / log out, so the template needs
 
 [http://glyphicons.com/](http://glyphicons.com/) - Icons from Glyphicons Free, licensed under CC BY 3.0.
 
-[http://jquery.com/](http://jquery.com/) - jQuery 1.7.2
+[http://jquery.com/](http://jquery.com/) - jQuery 1.7.2 , jQuery 3
 
 [http://www.lavishbootstrap.com/](http://www.lavishbootstrap.com/) - create new colour schemes
+
+# REPOSITORY
+
+The public repository of this module is
+[https://github.com/Corion/dancer-layout-bootstrap](https://github.com/Corion/dancer-layout-bootstrap).
+
+# SUPPORT
+
+The public support forum of this module is
+[https://perlmonks.org/](https://perlmonks.org/).
+
+# BUG TRACKER
+
+Please report bugs in this module via the RT CPAN bug queue at
+[https://rt.cpan.org/Public/Dist/Display.html?Name=Dancer-Layout-Bootstrap](https://rt.cpan.org/Public/Dist/Display.html?Name=Dancer-Layout-Bootstrap)
+or via mail to [dancer-layout-bootstrap-Bugs@rt.cpan.org](https://metacpan.org/pod/dancer-layout-bootstrap-Bugs@rt.cpan.org).
+
+# AUTHOR
+
+Max Maischein `corion@cpan.org`
+
+# COPYRIGHT (c)
+
+Copyright 2014-2017 by Max Maischein `corion@cpan.org`.
+
+# LICENSE
+
+This module is released under the same terms as Perl itself.
