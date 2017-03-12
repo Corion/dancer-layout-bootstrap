@@ -59,7 +59,10 @@ appropriate list of files to copy.
     public/css/fonts/glyphicons-halflings-regular.woff2 Bootstrap 3
     public/javascripts/bootstrap-3/bootstrap.js Bootstrap 3
     public/javascripts/bootstrap-3/bootstrap.min.js Bootstrap 3
-    public/javascripts/jQuery/jquery-1.11.3.min.js jQuery 1.11.3 (for Bootstrap 3)
+    public/javascripts/jQuery/jquery-3.1.1.min.js jQuery 3.1.1 (for Bootstrap 3)
+    public/javascripts/jQuery/jquery-ui-1.12.min.js jQuery UI (for Bootstrap 3)
+    views/index.tt        Index page with Bootstrap layout
+    views/layouts/bootstrap3.tt    The Bootstrap layout
 
 =head3 Bootstrap 2
 
@@ -90,13 +93,13 @@ L<http://bootswatch.com/> - Themes for Bootstrap
 
 L<http://glyphicons.com/> - Icons from Glyphicons Free, licensed under CC BY 3.0.
 
-L<http://jquery.com/> - jQuery 1.7.2
+L<http://jquery.com/> - jQuery 1.7.2 , jQuery 3
 
 L<http://www.lavishbootstrap.com/> - create new colour schemes
 
 =cut
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 get '/' => sub {
     template 'index';
@@ -140,7 +143,7 @@ L<https://perlmonks.org/>.
 =head1 BUG TRACKER
 
 Please report bugs in this module via the RT CPAN bug queue at
-L<https://rt.cpan.org/Public/Dist/Display.html?Name=Dancer-SearchApp>
+L<https://rt.cpan.org/Public/Dist/Display.html?Name=Dancer-Layout-Bootstrap>
 or via mail to L<dancer-layout-bootstrap-Bugs@rt.cpan.org>.
 
 =head1 AUTHOR
@@ -149,7 +152,7 @@ Max Maischein C<corion@cpan.org>
 
 =head1 COPYRIGHT (c)
 
-Copyright 2014-2016 by Max Maischein C<corion@cpan.org>.
+Copyright 2014-2017 by Max Maischein C<corion@cpan.org>.
 
 =head1 LICENSE
 
